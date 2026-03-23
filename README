@@ -1,4 +1,0 @@
-creates blank directory then copies the necessary boot script and downloads a qcow2 image from a provided url.
-i did not add error checking BE SURE TO INCLUDE THE URL at least
-
-./init.sh [url] [size]
