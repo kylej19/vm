@@ -1,5 +1,7 @@
 
-*vm/*
+disk/*
+images/*
+
 *.qcow2 
 
 # emacs

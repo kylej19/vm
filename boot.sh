@@ -4,9 +4,9 @@
 
 qemu-system-x86_64 \
     -cpu max \
-    -accel hvf \
-    -m 8192 \
-    -drive file=./vdisk.qcow2,media=disk,if=virtio \
+    -accel kvm \
+    -m 2048 \
+    -drive file=./disk/debian.qcow2,media=disk,if=virtio \
     -nic user,model=virtio \
     -vga virtio \
-    -display cocoa,full-grab=on,zoom-to-fit=on
+    -display sdl
