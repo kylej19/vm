@@ -7,6 +7,5 @@ qemu-system-x86_64 \
     -accel kvm \
     -m 2048 \
     -drive file=./disk/debian.qcow2,media=disk,if=virtio \
-    -nic user,model=virtio \
-    -vga virtio \
-    -display sdl
+    -nic user,model=virtio,hostfwd=tcp::2222-:22 \
+    -nographic 
